@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ache o porco</title>
+    <link rel="shortcut icon" type="image/jpeg" href="/img/images.jpeg"/>
+    <style>
+      html {
+        list-style-type: none;
+        background-color: blanchedalmond;
+      }
+
+      .porcao {
+        display: block;
+        margin: 0 auto;
+        width: 2px;
+        padding: 2px;
+        background-color: rgb(255, 140, 0);
+        border-radius: 60px;
+      }
+
+      .porcao:hover {
+        zoom: 4000%;
+      }
+
+      header {
+        text-align: center;
+        font-size: 50px;
+        background-color: brown;
+        padding: 40px;
+        color: white;
+      }
+
+      .ache,
+      .parabens {
+        display: none;
+      }
+
+      .ache {
+        display: inline;
+      }
+
+      .porcao:hover + header .ache {
+        display: none;
+      }
+
+      .porcao:hover + header .parabens {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="porcao" src="img/images.jpeg" alt="porcao" />
+    <header>
+      <span class="ache">ache o porco</span>
+      <span class="parabens">parabéns</span>
+    </header>
+  </body>
+</html>
